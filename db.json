@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "name": "Phone Mini",
+      "price": 699,
+      "description": "A great phone with one of the best cameras",
+      "imageUrl": "https://via.placeholder.com/150"
+    },
+    {
+      "id": "3",
+      "name": "Phone Standard",
+      "price": 299,
+      "description": "A great phone with one of the best cameras",
+      "imageUrl": "https://via.placeholder.com/150"
+    }
+  ]
+}

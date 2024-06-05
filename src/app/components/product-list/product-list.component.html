@@ -1,0 +1,28 @@
+<div class="overflow-x-auto">
+    <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+      <thead class="ltr:text-left rtl:text-right">
+        <tr>
+          <th></th>
+          <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Name</th>
+          <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Price</th>
+          <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Description</th>
+          <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Image</th>
+          <th> Add </th>
+        </tr>
+      </thead>
+  
+      <tbody class="divide-y divide-gray-200">
+        <tr *ngFor="let product of products ; index as i">
+          <td> {{ i + 1}}</td>
+          <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">{{ product.name}}</td>
+          <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{ product.price}}</td>
+          <td class="whitespace-nowrap px-4 py-2 text-gray-700">{{ product.description}}</td>
+          <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+            <img src="{{ product.imageUrl}} " alt="">
+          </td>
+          <td><button type="submit" (click)="handleDelete(product.id!)" >Delete</button></td>
+          <td><a href="">Update</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

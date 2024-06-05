@@ -1,0 +1,22 @@
+<form class="w-full" (submit)="onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label><br>
+      <input type="text" class="border-solid border-2 border-red-700" id="name" 
+      placeholder="name" [(ngModel)]="product.name" name="name"/>
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label><br>
+      <input type="number" class="border-solid border-2 border-red-700"id="price" 
+      placeholder="price" [(ngModel)]="product.price" name="price"/>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label><br>
+      <input type="text" class="border-solid border-2 border-red-700" id="description" placeholder="description" [(ngModel)]="product.description" name="description"/>
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">Image</label><br>
+      <input type="text" class="border-solid border-2 border-red-700" id="image"
+      placeholder="image" [(ngModel)]="product.imageUrl" name="image"/>
+    </div>
+    <button type="submit" class="w-32 h-10 bg-blue-500 rounded-lg">Submit</button>
+  </form>

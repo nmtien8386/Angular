@@ -1,0 +1,47 @@
+<form class="w-full" [formGroup]="productForm" (ngSubmit)="onsubmit()">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label><br />
+    <input
+      type="text"
+      class="border-solid border-2 border-red-700"
+      id="name"
+      placeholder="name"
+      name="name"
+      formControlName="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Price</label><br />
+    <input
+      type="number"
+      class="border-solid border-2 border-red-700"
+      id="price"
+      placeholder="price"
+      name="price"
+      formControlName="price"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label><br />
+    <input
+      type="text"
+      class="border-solid border-2 border-red-700"
+      id="description"
+      placeholder="description"
+      name="description"
+      formControlName="description"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="image" class="form-label">Image</label><br />
+    <input
+      type="text"
+      class="border-solid border-2 border-red-700"
+      id="image"
+      placeholder="image"
+      name="image"
+      formControlName="imageUrl"
+    />
+  </div>
+  <button type="submit" class="w-32 h-10 bg-blue-500 rounded-lg">Submit</button>
+</form>
